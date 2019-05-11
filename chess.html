@@ -1,0 +1,1843 @@
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+  <style>
+	
+
+
+  .rook1{
+	width: 49px;
+	height: 49px;
+		position: absolute;
+		top: 525px;
+		left: 434px;
+	z-index: 10;
+
+  }
+    .rook2{
+	width: 49px;
+	height: 49px;
+		position: absolute;
+		top: 525px;
+		left: 875px;
+	z-index: 10;
+  }
+  .pawn1{
+  	width: 49px;
+  	height: 49px;
+	position: absolute;
+	top: 462px;
+	left: 434px;
+	z-index: 10;
+  }
+    .pawn2{
+  	width: 49px;
+  	height: 49px;
+	position: absolute;
+	top: 462px;
+	left: 497px;
+	z-index: 10;
+  }
+    
+    .pawn3{
+  	width: 49px;
+  	height: 49px;
+	position: absolute;
+	top: 462px;
+	left: 560px;
+	z-index: 10;
+  }
+    .pawn4{
+  	width: 49px;
+  	height: 49px;
+	position: absolute;
+	top: 462px;
+	left: 623px;
+	z-index: 10;
+  }
+    .pawn5{
+  	width: 49px;
+  	height: 49px;
+	position: absolute;
+	top: 462px;
+	left: 686px;
+	z-index: 10;
+  }
+    .pawn6{
+  	width: 49px;
+  	height: 49px;
+	position: absolute;
+	top: 462px;
+	left: 749px;
+	z-index: 10;
+  }
+    .pawn7{
+  	width: 49px;
+  	height: 49px;
+	position: absolute;
+	top: 462px;
+	left: 812px;
+	z-index: 10;
+  }
+	.pawn8{
+  	width: 49px;
+  	height: 49px;
+	position: absolute;
+	top: 462px;
+	left: 875px;
+	z-index: 10;
+  }
+  	.bishop1{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 525px;
+		left: 560px;
+		z-index: 10;
+	}
+	.bishop2{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 525px;
+		left: 749px;
+		z-index: 10;
+	}
+	.queen{
+	width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 525px;
+		left: 623px;
+		z-index: 10;
+	}
+	.king{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 525px;
+		left: 686px;
+		z-index: 10;
+	}
+	.knight1{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 525px;
+		left: 497px;
+		z-index: 10;
+	}
+	.knight2{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 525px;
+		left: 812px;
+		z-index: 6;
+	}
+
+
+
+/*Black figures*/
+	.blackRook1{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 84px;
+		left: 434px;
+		z-index: 10;
+	}
+	.blackRook2{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 84px;
+		left: 875px;
+		z-index: 10;
+	}
+	.blackPawn1{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 147px;
+		left: 434px;
+		z-index: 10;
+	}
+	.blackPawn2{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 147px;
+		left: 497px;
+		z-index: 10;
+	}
+	.blackPawn3{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 147px;
+		left: 560px;
+		z-index: 10;
+	}
+	.blackPawn4{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 147px;
+		left: 623px;
+		z-index: 10;
+	}
+	.blackPawn5{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 147px;
+		left: 686px;
+		z-index: 10;
+	}
+	.blackPawn6{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 147px;
+		left: 749px;
+		z-index: 10;
+	}
+	.blackPawn7{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 147px;
+		left: 812px;
+		z-index: 10;
+	}
+	.blackPawn8{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 147px;
+		left: 875px;
+		z-index: 10;
+	}
+	.blackBishop1{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 84px;
+		left: 749px;
+		z-index: 10;
+	}
+	.blackBishop2{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 84px;
+		left: 560px;
+		z-index: 10;
+	}
+	.blackqueen{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top: 84px;
+		left: 623px;
+		z-index: 10;
+	}
+	.blackKing{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top:  84px;
+		left: 686px;
+		z-index: 10;
+	}
+	.blackKnight1{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top:  84px;
+		left: 497px;
+		z-index: 10;
+	}
+	.blackKnight2{
+		width: 49px;
+		height: 49px;
+		position: absolute;
+		top:  84px;
+		left: 812px;
+		z-index: 10;
+	}
+
+
+
+
+  	.chessboard{
+  		width: 600px;
+  		height: 600px;
+  		background-color: gray;
+		position: absolute;
+		top: 30px;
+		left: 380px;
+		z-index: 1;
+
+  	}
+  	.lines1{
+  		width: 504px;
+  		height: 504px;
+  		/*border: 2px black solid;*/
+  		z-index: 1;
+  		position: absolute;
+		top: 77px;
+		left: 427px;
+		background-color: darkgray;
+  	}
+
+	.a1{
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 3;
+  	position: absolute;
+	top: 518px;
+	left: 427px;
+	}
+	.b1{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 518px;
+	left: 490px;
+  	
+	}
+	.c1{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 518px;
+	left: 553px;
+  	
+	}
+	.d1{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 518px;
+	left: 616px;
+  	
+	}
+	.e1{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 518px;
+	left: 679px;
+  	
+	}
+	.f1{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 518px;
+	left: 742px;
+  	
+	}
+	.g1{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 518px;
+	left: 805px;
+  	
+	}
+	.h1{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 518px;
+	left: 868px;
+}
+  	.a2{
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 3;
+  	position: absolute;
+	top: 455px;
+	left: 427px;
+	}
+	.b2{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 455px;
+	left: 490px;
+  	
+	}
+	.c2{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 455px;
+	left: 553px;
+  	
+	}
+	.d2{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 455px;
+	left: 616px;
+  	
+	}
+	.e2{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 455px;
+	left: 679px;
+  	
+	}
+	.f2{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 455px;
+	left: 742px;
+  	
+	}
+	.g2{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 455px;
+	left: 805px;
+  	
+	}
+	.h2{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 455px;
+	left: 868px;
+	}
+	.a3{
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 3;
+  	position: absolute;
+	top: 392px;
+	left: 427px;
+	}
+	.b3{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 392px;
+	left: 490px;
+  	
+	}
+	.c3{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 392px;
+	left: 553px;
+  	
+	}
+	.d3{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 392px;
+	left: 616px;
+  	
+	}
+	.e3{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 392px;
+	left: 679px;
+  	
+	}
+	.f3{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 392px;
+	left: 742px;
+  	
+	}
+	.g3{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 392px;
+	left: 805px;
+  	
+	}
+	.h3{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 392px;
+	left: 868px;
+}
+  	.a4{
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 3;
+  	position: absolute;
+	top: 329px;
+	left: 427px;
+	}
+	.b4{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 329px;
+	left: 490px;
+  	
+	}
+	.c4{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 329px;
+	left: 553px;
+  	
+	}
+	.d4{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 329px;
+	left: 616px;
+  	
+	}
+	.e4{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 329px;
+	left: 679px;
+  	
+	}
+	.f4{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 329px;
+	left: 742px;
+  	
+	}
+	.g4{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 329px;
+	left: 805px;
+  	
+	}
+	.h4{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 329px;
+	left: 868px;
+	}
+	.a5{
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 3;
+  	position: absolute;
+	top: 266px;
+	left: 427px;
+	}
+	.b5{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 266px;
+	left: 490px;
+  	
+	}
+	.c5{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 266px;
+	left: 553px;
+  	
+	}
+	.d5{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 266px;
+	left: 616px;
+  	
+	}
+	.e5{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 266px;
+	left: 679px;
+  	
+	}
+	.f5{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 266px;
+	left: 742px;
+  	
+	}
+	.g5{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 266px;
+	left: 805px;
+  	
+	}
+	.h5{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 266px;
+	left: 868px;
+}
+  	.a6{
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 3;
+  	position: absolute;
+	top: 203px;
+	left: 427px;
+	}
+	.b6{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 203px;
+	left: 490px;
+  	
+	}
+	.c6{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 203px;
+	left: 553px;
+  	
+	}
+	.d6{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 203px;
+	left: 616px;
+  	
+	}
+	.e6{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 203px;
+	left: 679px;
+  	
+	}
+	.f6{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 203px;
+	left: 742px;
+  	
+	}
+	.g6{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 203px;
+	left: 805px;
+  	
+	}
+	.h6{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 203px;
+	left: 868px;
+	}
+	.a7{
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 3;
+  	position: absolute;
+	top: 140px;
+	left: 427px;
+	}
+	.b7{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 140px;
+	left: 490px;
+  	
+	}
+	.c7{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 140px;
+	left: 553px;
+  	
+	}
+	.d7{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 140px;
+	left: 616px;
+  	
+	}
+	.e7{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 140px;
+	left: 679px;
+  	
+	}
+	.f7{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 140px;
+	left: 742px;
+  	
+	}
+	.g7{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 140px;
+	left: 805px;
+  	
+	}
+	.h7{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 140px;
+	left: 868px;
+}
+  	.a8{
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 3;
+  	position: absolute;
+	top: 77px;
+	left: 427px;
+	}
+	.b8{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 77px;
+	left: 490px;
+  	
+	}
+	.c8{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 77px;
+	left: 553px;
+  	
+	}
+	.d8{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 77px;
+	left: 616px;
+  	
+	}
+	.e8{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 77px;
+	left: 679px;
+  	
+	}
+	.f8{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 77px;
+	left: 742px;
+  	
+	}
+	.g8{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #F2D4CB;
+	z-index: 4;
+	 	position: absolute;
+	top: 77px;
+	left: 805px;
+  	
+	}
+	.h8{
+	
+	width: 63px;
+	height: 63px;
+	background-color: #9A6150;
+	z-index: 4;
+	 	position: absolute;
+	top: 77px;
+	left: 868px;
+	}
+	.a10{
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+  	position: absolute;
+	top: 518px;
+	left: 427px;
+	}
+	.b10{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 518px;
+	left: 490px;
+  	
+	}
+	.c10{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 518px;
+	left: 553px;
+  	
+	}
+	.d10{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 518px;
+	left: 616px;
+  	
+	}
+	.e10{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 518px;
+	left: 679px;
+  	
+	}
+	.f10{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 518px;
+	left: 742px;
+  	
+	}
+	.g10{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 518px;
+	left: 805px;
+  	
+	}
+	.h10{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 518px;
+	left: 868px;
+}
+  	.a20{
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+  	position: absolute;
+	top: 455px;
+	left: 427px;
+	}
+	.b20{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 455px;
+	left: 490px;
+  	
+	}
+	.c20{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 455px;
+	left: 553px;
+  	
+	}
+	.d20{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 455px;
+	left: 616px;
+  	
+	}
+	.e20{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 455px;
+	left: 679px;
+  	
+	}
+	.f20{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 455px;
+	left: 742px;
+  	
+	}
+	.g20{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 455px;
+	left: 805px;
+  	
+	}
+	.h20{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 455px;
+	left: 868px;
+	}
+	.a30{
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+  	position: absolute;
+	top: 392px;
+	left: 427px;
+	}
+	.b30{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 392px;
+	left: 490px;
+  	
+	}
+	.c30{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 392px;
+	left: 553px;
+  	
+	}
+	.d30{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 392px;
+	left: 616px;
+  	
+	}
+	.e30{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 392px;
+	left: 679px;
+  	
+	}
+	.f30{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 392px;
+	left: 742px;
+  	
+	}
+	.g30{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 392px;
+	left: 805px;
+  	
+	}
+	.h30{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 392px;
+	left: 868px;
+}
+  	.a40{
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+  	position: absolute;
+	top: 329px;
+	left: 427px;
+	}
+	.b40{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 329px;
+	left: 490px;
+  	
+	}
+	.c40{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 329px;
+	left: 553px;
+  	
+	}
+	.d40{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 329px;
+	left: 616px;
+  	
+	}
+	.e40{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 329px;
+	left: 679px;
+  	
+	}
+	.f40{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 329px;
+	left: 742px;
+  	
+	}
+	.g40{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 329px;
+	left: 805px;
+  	
+	}
+	.h40{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 329px;
+	left: 868px;
+	}
+	.a50{
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+  	position: absolute;
+	top: 266px;
+	left: 427px;
+	}
+	.b50{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 266px;
+	left: 490px;
+  	
+	}
+	.c50{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 266px;
+	left: 553px;
+  	
+	}
+	.d50{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 266px;
+	left: 616px;
+  	
+	}
+	.e50{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 266px;
+	left: 679px;
+  	
+	}
+	.f50{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 266px;
+	left: 742px;
+  	
+	}
+	.g50{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 266px;
+	left: 805px;
+  	
+	}
+	.h50{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 266px;
+	left: 868px;
+}
+  	.a60{
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+  	position: absolute;
+	top: 203px;
+	left: 427px;
+	}
+	.b60{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 203px;
+	left: 490px;
+  	
+	}
+	.c60{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 203px;
+	left: 553px;
+  	
+	}
+	.d60{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 203px;
+	left: 616px;
+  	
+	}
+	.e60{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 203px;
+	left: 679px;
+  	
+	}
+	.f60{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 203px;
+	left: 742px;
+  	
+	}
+	.g60{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 203px;
+	left: 805px;
+  	
+	}
+	.h60{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 203px;
+	left: 868px;
+	}
+	.a70{
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+  	position: absolute;
+	top: 140px;
+	left: 427px;
+	}
+	.b70{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 140px;
+	left: 490px;
+  	
+	}
+	.c70{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 140px;
+	left: 553px;
+  	
+	}
+	.d70{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 140px;
+	left: 616px;
+  	
+	}
+	.e70{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 140px;
+	left: 679px;
+  	
+	}
+	.f70{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 140px;
+	left: 742px;
+  	
+	}
+	.g70{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 140px;
+	left: 805px;
+  	
+	}
+	.h70{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 140px;
+	left: 868px;
+}
+  	.a80{
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+  	position: absolute;
+	top: 77px;
+	left: 427px;
+	}
+	.b80{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 77px;
+	left: 490px;
+  	
+	}
+	.c80{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 77px;
+	left: 553px;
+  	
+	}
+	.d80{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 77px;
+	left: 616px;
+  	
+	}
+	.e80{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 77px;
+	left: 679px;
+  	
+	}
+	.f80{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 77px;
+	left: 742px;
+  	
+	}
+	.g80{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 77px;
+	left: 805px;
+  	
+	}
+	.h80{
+	
+	width: 63px;
+	height: 63px;
+	
+	z-index: 5;
+	 	position: absolute;
+	top: 77px;
+	left: 868px;
+	}
+
+  </style>
+</head>
+<title>Chess(1)
+</title>
+<body>
+	<img class="rook1" src="../img/rook.png">
+	<img class="rook2" src="../img/rook.png">
+	<img  class="bishop1" src='../img/bishop.png'>
+	<img  class="bishop2" src='../img/bishop.png'>
+	<img class="pawn1" src="../img/pawn.png">
+	<img class="pawn2" src="../img/pawn.png">
+	<img class="pawn3" src="../img/pawn.png">
+	<img class="pawn4" src="../img/pawn.png">
+	<img class="pawn5" src="../img/pawn.png">
+	<img class="pawn6" src="../img/pawn.png">
+	<img class="pawn7" src="../img/pawn.png">
+	<img class="pawn8" src="../img/pawn.png">
+	<img  class="knight1" src="../img/knight.png">
+	<img  class="knight2" src="../img/knight.png">
+	<img  class="queen" src="../img/queen.png">
+	<img  class="king" src='../img/king.png'>
+
+
+	<img class="blackRook1" src="../img/blackRook.png">
+	<img class="blackRook2" src="../img/blackRook.png">
+	<img  class="blackBishop1" src='../img/blackBishop.png'>
+	<img  class="blackBishop2" src='../img/blackBishop.png'>
+	<img  class="blackPawn1" src='../img/blackPawn.png'>
+	<img  class="blackPawn2" src='../img/blackPawn.png'>
+	<img  class="blackPawn3" src='../img/blackPawn.png'>
+	<img  class="blackPawn4" src='../img/blackPawn.png'>
+	<img  class="blackPawn5" src='../img/blackPawn.png'>
+	<img  class="blackPawn6" src='../img/blackPawn.png'>
+	<img  class="blackPawn7" src='../img/blackPawn.png'>
+	<img  class="blackPawn8" src='../img/blackPawn.png'>
+	<img class="blackKnight1" src='../img/blackKnight.png'>
+	<img class="blackKnight2" src='../img/blackKnight.png'>
+	<img  class="blackQueen" src='../img/blackQueen.png'>
+
+	<img  class="blackKing" src='../img/blackKing.png'>
+
+	
+	
+	
+	<span  class="items"></span>
+	<span  class="chessboard"></span>
+	<span  class="lines1"></span>
+
+	<div class="chessboard2">
+
+	</div>
+<div class="allItems">
+ <div class='a1'></div>
+ <div class='a2'></div>
+ <div class='a3'></div>
+ <div class='a4'></div>
+ <div class='a5'></div>
+ <div class='a6'></div>
+ <div class='a7'></div>
+ <div class='a8'></div>
+ <div class='b1'></div>
+ <div class='b2'></div>
+ <div class='b3'></div>
+ <div class='b4'></div>
+ <div class='b5'></div>
+ <div class='b6'></div>
+ <div class='b7'></div>
+ <div class='b8'></div>
+ <div class='c1'></div>
+ <div class='c2'></div>
+ <div class='c3'></div>
+ <div class='c4'></div>
+ <div class='c5'></div>
+ <div class='c6'></div>
+ <div class='c7'></div>
+ <div class='c8'></div>
+ <div class='d1'></div>
+ <div class='d2'></div>
+ <div class='d3'></div>
+ <div class='d4'></div>
+ <div class='d5'></div>
+ <div class='d6'></div>
+ <div class='d7'></div>
+ <div class='d8'></div>
+ <div class='e1'></div>
+ <div class='e2'></div>
+ <div class='e3'></div>
+ <div class='e4'></div>
+ <div class='e5'></div>
+ <div class='e6'></div>
+ <div class='e7'></div>
+ <div class='e8'></div>
+ <div class='f1'></div>
+ <div class='f2'></div>
+ <div class='f3'></div>
+ <div class='f4'></div>
+ <div class='f5'></div>
+ <div class='f6'></div>
+ <div class='f7'></div>
+ <div class='f8'></div>
+ <div class='g1'></div>
+ <div class='g2'></div>
+ <div class='g3'></div>
+ <div class='g4'></div>
+ <div class='g5'></div>
+ <div class='g6'></div>
+ <div class='g7'></div>
+ <div class='g8'></div>
+ <div class='h1'></div>
+ <div class='h2'></div>
+ <div class='h3'></div>
+ <div class='h4'></div>
+ <div class='h5'></div>
+ <div class='h6'></div>
+ <div class='h7'></div>
+ <div class='h8'></div>
+
+</div>
+<div id='transparentItems'>
+
+ <div class='a10'></div>
+ <div class='a20'></div>
+ <div class='a30'></div>
+ <div class='a40'></div>
+ <div class='a50'></div>
+ <div class='a60'></div>
+ <div class='a70'></div>
+ <div class='a80'></div>
+ <div class='b10'></div>
+ <div class='b20'></div>
+ <div class='b30'></div>
+ <div class='b40'></div>
+ <div class='b50'></div>
+ <div class='b60'></div>
+ <div class='b70'></div>
+ <div class='b80'></div>
+ <div class='c10'></div>
+ <div class='c20'></div>
+ <div class='c30'></div>
+ <div class='c40'></div>
+ <div class='c50'></div>
+ <div class='c60'></div>
+ <div class='c70'></div>
+ <div class='c80'></div>
+ <div class='d10'></div>
+ <div class='d20'></div>
+ <div class='d30'></div>
+ <div class='d40'></div>
+ <div class='d50'></div>
+ <div class='d60'></div>
+ <div class='d70'></div>
+ <div class='d80'></div>
+ <div class='e10'></div>
+ <div class='e20'></div>
+ <div class='e30'></div>
+ <div class='e40'></div>
+ <div class='e50'></div>
+ <div class='e60'></div>
+ <div class='e70'></div>
+ <div class='e80'></div>
+ <div class='f10'></div>
+ <div class='f20'></div>
+ <div class='f30'></div>
+ <div class='f40'></div>
+ <div class='f50'></div>
+ <div class='f60'></div>
+ <div class='f70'></div>
+ <div class='f80'></div>
+ <div class='g10'></div>
+ <div class='g20'></div>
+ <div class='g30'></div>
+ <div class='g40'></div>
+ <div class='g50'></div>
+ <div class='g60'></div>
+ <div class='g70'></div>
+ <div class='g80'></div>
+ <div class='h10'></div>
+ <div class='h20'></div>
+ <div class='h30'></div>
+ <div class='h40'></div>
+ <div class='h50'></div>
+ <div class='h60'></div>
+ <div class='h70'></div>
+ <div class='h80'>h8</div>
+</div>
+ <script src="js/chess1.js"></script>
+</body>
+</html>
